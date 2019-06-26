@@ -1,6 +1,6 @@
 public class Body {
-    String name;
-    double height, weight;
+    private String name;
+    private double height, weight;
     public Body() {
 	name = ""; height = 0.0; weight = 0.0;
     }
@@ -17,5 +17,17 @@ public class Body {
 	System.out.println(" name : " + name);
 	System.out.println("height : " + height + " cm");
 	System.out.println("weight : " + weight + " kg");
+    }
+
+    public void setName(String s){
+	name = s;
+    }
+
+    public void setHeight(double h){
+	height = h;
+    }
+
+    public void setWeight(double w){
+	weight = w;
     }
 }
